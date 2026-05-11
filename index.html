@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Derivadas Suma y Resta - Bloque A</title>
 
-<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VaUF7XPUjFl9YX6m_QC68OTUZOceUzJmCsrQM02s2Go69K49IeQpwSYK47zB09Tnbcv9p7Nks13rhmHeZR7_g7ZGABO8qo7u-ggjlLsjV4wtmoT7hQyhONKqY0CC7j_wJT2TwusCsPUg7RQLzikEV7LI2hocAANv9hMlQqqdbpfRS-8jXa3J5Li4ocAVEU57U8F1coG0AQCg4-5fEPgJ_IweBWmab_6O5_0bqXHci6aQZl_kyVgcr5seSW-nHb8-A-AG5q_e8dPQ5kCGR5L53A" charset="UTF-8"></script><script type="module">
-  import 'https://esm.run/mathlive';
+<script type="module">
+  import "https://cdn.jsdelivr.net/npm/mathlive?module";
 </script>
 
 <script>
@@ -15,6 +15,7 @@ window.MathJax = {
   svg:{ fontCache:'global' }
 };
 </script>
+
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
 <style>
@@ -257,7 +258,7 @@ math-field[disabled]{
         <div class="step-title">Paso 1. Convertir a potencia si es necesario</div>
         <div class="attempts" id="attempts-1">Intentos: 0/3</div>
       </div>
-      <math-field id="mf-1" virtual-keyboard-mode="off"></math-field>
+      <math-field id="mf-1" virtual-keyboard-mode="manual"></math-field>
       <div class="actions">
         <button id="btn-1">Revisar</button>
         <button id="na-1" class="btn-na">No aplica</button>
@@ -1294,7 +1295,7 @@ function init(){
   });
 }
 
-window.addEventListener("load",init);
+document.addEventListener("DOMContentLoaded", init);
 </script>
 </body>
 </html>
